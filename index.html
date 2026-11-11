@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolívar Eco-Calculator</title>
+</head>
+<body>
+
+    <h1>Bolívar Eco-Calculator</h1>
+
+    <h2>Calculadora Ambiental</h2>
+
+    <label for="transporte">Transporte al colegio:</label>
+    <select id="transporte">
+        <option value="bus">Bus</option>
+        <option value="privado">Carro privado</option>
+        <option value="compartido">Carro compartido</option>
+        <option value="bici">Bicicleta/Caminando</option>
+    </select>
+
+    <p>
+        <label for="papel">Hojas usadas al día:</label>
+        <input type="number" id="papel" min="0" value="0">
+    </p>
+
+    <label for="reciclaje">Nivel de reciclaje:</label>
+    <select id="reciclaje">
+        <option value="bajo">Bajo</option>
+        <option value="medio">Medio</option>
+        <option value="alto">Alto</option>
+    </select>
+
+    <p>
+        <button type="button" onclick="calcular()">
+            Calcular
+        </button>
+    </p>
+
+    <h2>Resultados</h2>
+    <p id="co2"></p>
+    <p id="puntos"></p>
+
+    <script src="actions.js"></script>
+
+</body>
+</html>
